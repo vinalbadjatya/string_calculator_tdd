@@ -13,7 +13,7 @@ This is a simple **String Calculator** project built with **Test-Driven Developm
 ---
 
 ### ✅ How Someone Can Check:
-1. **Clone your repository**
+1. **Clone  repository**
 2. **Run `bundle install`** (if you use a `Gemfile`)
 3. **Run `rspec`** to check if all tests are passing
 4. **Open the `string_calculator.rb` file** to review the code logic
@@ -34,10 +34,16 @@ This is a simple **String Calculator** project built with **Test-Driven Developm
 string_calculator_tdd/
 ├── lib/
 │   └── string_calculator.rb   # Calculator implementation
+
+
 ├── spec/
 │   └── string_calculator_spec.rb  # RSpec test cases
+
+
 ├── README.md
+
 ├── Gemfile
+
 └── .rspec
 
 5. Example
