@@ -1,24 +1,49 @@
-# README
+# string_calculator_tdd# String Calculator TDD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple **String Calculator** project built with **Test-Driven Development (TDD)** in Ruby.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 📌 Features
 
-* System dependencies
+- Add numbers passed as a string
+- Numbers separated by commas or newlines
+- Raise an exception if any negative numbers are present, listing **all negative numbers** in the exception message
 
-* Configuration
+---
 
-* Database creation
+### ✅ How Someone Can Check:
+1. **Clone your repository**
+2. **Run `bundle install`** (if you use a `Gemfile`)
+3. **Run `rspec`** to check if all tests are passing
+4. **Open the `string_calculator.rb` file** to review the code logic
 
-* Database initialization
+## 🚀 How to Run
 
-* How to run the test suite
+1. **Clone the repository**
+   ```bash
+   git clone git@github.com:vinalbadjatya/string_calculator_tdd.git
+   cd string_calculator_tdd
 
-* Services (job queues, cache servers, search engines, etc.)
+2. **Run bundle install
 
-* Deployment instructions
+3. Run the rspec
 
-* ...
+4. Project Structure
+
+string_calculator_tdd/
+├── lib/
+│   └── string_calculator.rb   # Calculator implementation
+├── spec/
+│   └── string_calculator_spec.rb  # RSpec test cases
+├── README.md
+├── Gemfile
+└── .rspec
+
+5. Example
+
+calculator = StringCalculator.new
+puts calculator.add("1,2,3")  # Output: 6
+puts calculator.add("1\n2,3") # Output: 6
+puts calculator.add("-1,2,-3")
+Raises: Negative numbers not allowed: -1, -3
