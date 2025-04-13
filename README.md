@@ -47,3 +47,4 @@ puts calculator.add("1,2,3")  # Output: 6
 puts calculator.add("1\n2,3") # Output: 6
 puts calculator.add("-1,2,-3")
 Raises: Negative numbers not allowed: -1, -3
+
